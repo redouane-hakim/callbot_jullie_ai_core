@@ -34,8 +34,8 @@ This project uses Ollama to run a small local model.
 
 ## Windows install
 
-1- Download and install Ollama for Windows from the official site.
-2- Open a new terminal and verify:
+- Download and install Ollama for Windows from the official site.
+- Open a new terminal and verify:
 
 ```bash
 ollama -v
