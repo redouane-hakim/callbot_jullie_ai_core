@@ -15,7 +15,7 @@ class ParallelPipeline:
             results["bert_sentiment"] = self.bert.analyze(text)
 
         def audio_path():
-            results["wav2vec_sentiment"] = self.wav2vec.analyze(audio)
+            results["wav2vec"] = self.wav2vec.analyze(audio)
 
         t1 = threading.Thread(target=text_path)
         t2 = threading.Thread(target=audio_path)

@@ -19,4 +19,6 @@ results = pipeline.process(audio)
 
 print("TEXT:", results["text"])
 print("BERT SENTIMENT:", results["bert_sentiment"])
-print("WAV2VEC SENTIMENT:", results["wav2vec_sentiment"])
+print("WAV2VEC SENTIMENT:", results["wav2vec"]["audio_sentiment"])
+print("WAV2VEC AUDIO SIGNAL SHAPE:", results["wav2vec"]["audio_signal"].shape)
+

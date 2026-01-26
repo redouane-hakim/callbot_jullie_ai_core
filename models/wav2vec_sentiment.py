@@ -20,4 +20,4 @@ class Wav2VecSentiment:
             logits = self.model(**inputs).logits
 
         predicted = torch.argmax(logits, dim=-1).item()
-        return {"audio_sentiment_class": predicted}
+        return {"audio_sentiment": predicted,"audio_signal": audio }
